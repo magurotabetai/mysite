@@ -1,5 +1,6 @@
-body {
-  font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif;
+/* body {
+  font-family: "Source Sans Pro", "Trebuchet MS", "Lucida Grande",
+    "Bitstream Vera Sans", "Helvetica Neue", sans-serif;
   margin: 0;
   text-align: center;
   color: #293c4b;
@@ -12,4 +13,25 @@ h1 {
 img {
   margin: 20px 0;
   max-width: 200px;
+} */
+
+body {
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 20vh 20vh 20vh 20vh 1fr;
+  grid-template-columns: 20% 1fr;
+}
+
+.content {
+  grid-column: 2;
+  grid-row: 1 / span 5;
+  background-color: #ecf0f1;
 }
